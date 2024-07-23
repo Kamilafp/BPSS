@@ -82,7 +82,7 @@
           
           <!-- /.col -->
           <div class="col-4 mx-auto">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-block" style="background-color: #00497d; color: #ffffff;">Register</button>
           </div>
           <!-- /.col -->
         </div>
@@ -100,7 +100,7 @@
         </a>
       </div> -->
 
-      <a href="login.php" class="text-center">Sudah punya akun</a>
+      <a href="login.php" class="text-center" style=" color: #00497d;">Sudah punya akun</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

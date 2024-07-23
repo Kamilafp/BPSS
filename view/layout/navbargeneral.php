@@ -1,16 +1,16 @@
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand  navbar-light" style='background: linear-gradient(#0078C7,#008EC3)'>
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars" style="color: white"></i></a>
     </ul>
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button" style="color: white">
           <i class="fas fa-search"></i>
         </a>
         <div class="navbar-search-block">
@@ -36,13 +36,13 @@
       <!-- Notifications Dropdown Menu -->
       
       <li class="nav-item">
-        <a class="nav-link"  href="../template.pdf" role="button" title='Template Surat Peminjaman'>
-          <i class="nav-icon fas fa-file"></i>
+        <a class="nav-link"  href="" role="button" title='Dark Mode' style="color: white">
+        <i class="fa fa-moon" aria-hidden="true"></i>
         </a>
       </li>
       <li class="nav-item">
-            <a href="function/logout.php" class="nav-link">
-            <i class="fas fa-power-off"></i>
+            <a href="function/logout.php" class="nav-link" title='Logout'>
+            <i class="fa fa-arrow-right-from-bracket"></i>
             </a>
       </li>
     </ul>

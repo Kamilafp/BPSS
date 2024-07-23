@@ -1,9 +1,9 @@
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-light-primary elevation-4" >
     <!-- Brand Logo -->
-    <a href="https://ft.unsoed.ac.id/" class="brand-link">
-      <img src="../img/unsoed.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">FT Unsoed</span>
+    <a href="https://surakartakota.bps.go.id/" class="brand-link" style='background: linear-gradient(#0078C7,#008EC3)'>
+      <img src="../img/BPS.png" alt="bps"  class="brand-image img-circle elevation-3" style="opacity: .9; background-color: white" >
+      <span class="brand-text font-weight-dark" style="color: white; padding-left: 15px;">BPS Surakarta</span>
     </a>
 
     <!-- Sidebar -->
@@ -11,7 +11,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16" >
           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
           <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
         </svg>
@@ -38,44 +38,50 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
             <a href="../view/dashboard.php" class="nav-link">
-              <i class="nav-icon fas fa-home"></i>
+              <i class="nav-icon fas fa-users"></i>
               <p>
-                Dashboard
+                Users
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Admin</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Operator</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Struktural</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fungsional</p>
+                </a>
+              </li>
+            </ul>
           </li>
-        </ul>
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
                 <a href="../view/table.php" class="nav-link">
-                <i class="nav-icon fas fa-table"></i>
-                  <p>Jadwal Peminjaman</p>
+                <i class="nav-icon fas fa-envelope-open-text"></i>
+                  <p>Surat</p>
                 </a>
-          </li> 
-        </ul>
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        </li>
         <li class="nav-item">
-                <a href="../view/gedung.php" class="nav-link">
-                <i class="nav-icon fas fa-building"></i>
-                  <p>Gedung</p>
+                <a href="../view/table.php" class="nav-link">
+                <i class="nav-icon fas fa-folder-open"></i>
+                  <p>Berkas</p>
                 </a>
-          </li> 
-        </ul>
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
-                <a href="../view/detailruang.php" class="nav-link">
-                <i class="nav-icon fas fa-door-open"></i>
-                  <p>Detail Ruangan</p>
-                </a>
-          </li> 
-        </ul>
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
-                <a href="../view/form.php" class="nav-link">
-                  <i class="nav-icon fas fa-edit"></i>
-                  <p>Formulir Peminjaman</p>
-                </a>
-          </li> 
+        </li>  
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -1,16 +1,4 @@
-/**
- * --------------------------------------------
- * AdminLTE Dropdown.js
- * License MIT
- * --------------------------------------------
- */
-
 import $ from 'jquery'
-
-/**
- * Constants
- * ====================================================
- */
 
 const NAME = 'Dropdown'
 const DATA_KEY = 'lte.dropdown'
@@ -24,13 +12,7 @@ const SELECTOR_DROPDOWN_TOGGLE = '[data-toggle="dropdown"]'
 const CLASS_NAME_DROPDOWN_RIGHT = 'dropdown-menu-right'
 const CLASS_NAME_DROPDOWN_SUBMENU = 'dropdown-submenu'
 
-// TODO: this is unused; should be removed along with the extend?
 const Default = {}
-
-/**
- * Class Definition
- * ====================================================
- */
 
 class Dropdown {
   constructor(element, config) {
@@ -38,9 +20,8 @@ class Dropdown {
     this._element = element
   }
 
-  // Public
-
   toggleSubmenu() {
+    console.log('Toggle submenu triggered');
     this._element.siblings().show().toggleClass('show')
 
     if (!this._element.next().hasClass('show')) {
@@ -53,6 +34,7 @@ class Dropdown {
   }
 
   fixPosition() {
+    console.log('Fix position triggered');
     const $element = $(SELECTOR_DROPDOWN_MENU_ACTIVE)
 
     if ($element.length === 0) {
@@ -88,8 +70,6 @@ class Dropdown {
     }
   }
 
-  // Static
-
   static _jQueryInterface(config) {
     return this.each(function () {
       let data = $(this).data(DATA_KEY)
@@ -107,12 +87,8 @@ class Dropdown {
   }
 }
 
-/**
- * Data API
- * ====================================================
- */
-
 $(`${SELECTOR_DROPDOWN_MENU} ${SELECTOR_DROPDOWN_TOGGLE}`).on('click', function (event) {
+  console.log('Dropdown menu toggle clicked');
   event.preventDefault()
   event.stopPropagation()
 
@@ -120,6 +96,7 @@ $(`${SELECTOR_DROPDOWN_MENU} ${SELECTOR_DROPDOWN_TOGGLE}`).on('click', function 
 })
 
 $(`${SELECTOR_NAVBAR} ${SELECTOR_DROPDOWN_TOGGLE}`).on('click', event => {
+  console.log('Navbar dropdown toggle clicked');
   event.preventDefault()
 
   if ($(event.target).parent().hasClass(CLASS_NAME_DROPDOWN_SUBMENU)) {
@@ -130,11 +107,6 @@ $(`${SELECTOR_NAVBAR} ${SELECTOR_DROPDOWN_TOGGLE}`).on('click', event => {
     Dropdown._jQueryInterface.call($(this), 'fixPosition')
   }, 1)
 })
-
-/**
- * jQuery API
- * ====================================================
- */
 
 $.fn[NAME] = Dropdown._jQueryInterface
 $.fn[NAME].Constructor = Dropdown

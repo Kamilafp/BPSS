@@ -50,12 +50,12 @@ if(isset($query)){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Jadwal Peminjaman</h1>
+            <h1>Daftar Surat</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Peminjaman Ruang FT</a></li>
-              <li class="breadcrumb-item active">Jadwal</li>
+              <li class="breadcrumb-item"><a href="#" style="color:#00497D">Disposisi Surat BPS</a></li>
+              <li class="breadcrumb-item active">Surakarta</li>
             </ol>
           </div>
         </div>
@@ -68,8 +68,8 @@ if(isset($query)){
         <div class="row">
           <div class="col-12">
             <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Rincian Jadwal</h3>
+              <div class="card-header"style="background-color: #00497D">
+                <h3 class="card-title" style="color: #ffff">Rincian Jadwal</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

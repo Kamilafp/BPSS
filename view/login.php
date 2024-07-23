@@ -18,7 +18,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="https://ft.unsoed.ac.id/"><b>FT</b>Unsoed</a>
+    <a href="https://surakartakota.bps.go.id/"><b>BPS</b>&nbsp Surakarta</a>
   </div>
   <!-- /.login-logo -->
   <div class="card border-0 shadow">
@@ -50,7 +50,7 @@
           <!-- /.col -->
           <div class="text-center nt-3">
             <button type="submit" class="btn btn-primary btn-block">login</button>
-          </div><a href="register.php" class="text-center">Belum punya akun</a>
+          </div><a href="register.php" class="text-center">Register</a>
           <!-- /.col -->
         </div>
       </form>

@@ -19,16 +19,16 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="index2.html"><b>FT</b>Unsoed</a>
+    <a href="https://surakartakota.bps.go.id/"><b>BPS</b>&nbspSurakarta</a>
   </div>
 
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg">Buat Akun</p>
+      <p class="login-box-msg">Register</p>
 
       <form action="function/regisProcess.php" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nama" name="nama" required>
+          <input type="text" class="form-control" placeholder="Name" name="nama" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>

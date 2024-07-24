@@ -1,3 +1,8 @@
+<head>
+  <!-- Other head elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand  navbar-light" style='background: linear-gradient(#0078C7,#008EC3)'>
     <!-- Left navbar links -->
@@ -41,8 +46,8 @@
         </a>
       </li>
       <li class="nav-item">
-            <a href="function/logout.php" class="nav-link" title='Logout'>
-            <i class="fa fa-arrow-right-from-bracket"></i>
+            <a href="function/logout.php" class="nav-link" role="button"title='Logout' style="color: white">
+            <i class="fa fa-sign-out-alt"></i>
             </a>
       </li>
     </ul>

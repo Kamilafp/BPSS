@@ -2,8 +2,8 @@
   <aside class="main-sidebar sidebar-light-primary elevation-4" >
     <!-- Brand Logo -->
     <a href="https://surakartakota.bps.go.id/" class="brand-link" style='background: linear-gradient(#0078C7,#008EC3)'>
-      <img src="../img/BPS.png" alt="bps"  class="brand-image img-circle elevation-3" style="opacity: .9; background-color: white" >
-      <span class="brand-text font-weight-dark" style="color: white; padding-left: 15px;">BPS Surakarta</span>
+      <img src="../img/BPS.png" alt="bps"  class="brand-image img-circle " style="opacity: .9; " >
+      <span class="brand-text font-weight-dark" style="color: white; padding-left: 13px;">BPS Surakarta</span>
     </a>
 
     <!-- Sidebar -->
@@ -45,25 +45,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../index.html" class="nav-link">
+                <a href="admin.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Admin</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index.html" class="nav-link">
+                <a href="operator.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Operator</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index2.html" class="nav-link">
+                <a href="struktural.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Struktural</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index3.html" class="nav-link">
+                <a href="fungsional.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Fungsional</p>
                 </a>
@@ -71,13 +71,13 @@
             </ul>
           </li>
         <li class="nav-item">
-                <a href="../view/table.php" class="nav-link">
+                <a href="table.php" class="nav-link">
                 <i class="nav-icon fas fa-envelope-open-text"></i>
                   <p>Surat</p>
                 </a>
         </li>
         <li class="nav-item">
-                <a href="../view/table.php" class="nav-link">
+                <a href="berkas.php" class="nav-link">
                 <i class="nav-icon fas fa-folder-open"></i>
                   <p>Berkas</p>
                 </a>

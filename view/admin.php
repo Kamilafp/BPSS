@@ -25,7 +25,7 @@ if(isset($query)){
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Peminjam</title>
+  <title>Data Admin</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -50,11 +50,11 @@ if(isset($query)){
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Daftar Surat</h1>
+            <h1>Daftar Admin</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#" style="color:#00497D">Disposisi Surat BPS</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color:#00497D">User Admin BPS</a></li>
               <li class="breadcrumb-item active">Surakarta</li>
             </ol>
           </div>
@@ -69,89 +69,26 @@ if(isset($query)){
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title" >Rincian Jadwal</h3>
+                <h3 class="card-title" >Rincian Admin</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>Nama Peminjam</th>
-                    <th>Acara</th>
-                    <th>Organisasi</th>
-                    <th>Ruang</th>
-                    <th>Waktu Awal</th>
-                    <th>Waktu Akhir</th>
+                    <th>No </th>
+                    <th>Nama</th>
+                    <th>Email</th>
                     <th>Aksi</th>
                   </tr>
                   </thead>
                   <tbody>
-                    <?php
-                      $query = "SELECT p.id_peminjaman, u.nama AS nama_peminjam, p.id_user, u.isAdmin, p.status, p.keperluan, p.organisasi, r.nama_ruangan, p.waktu_awal, p.waktu_selesai
-                                FROM peminjaman p
-                                INNER JOIN user u ON p.id_user = u.id_user
-                                INNER JOIN ruangan r ON p.id_ruangan = r.id_ruangan";
-                      $result = mysqli_query($conn, $query);
-
-                      // ...
-
-                      while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<tr>";
-                        echo "<td>{$row['nama_peminjam']}</td>";
-                        echo "<td>{$row['keperluan']}</td>";
-                        echo "<td>{$row['organisasi']}</td>";
-                        echo "<td>{$row['nama_ruangan']}</td>";
-                        echo "<td>{$row['waktu_awal']}</td>";
-                        echo "<td>{$row['waktu_selesai']}</td>";
-                    
-                        echo '<td>';
-                    
-                        if ($user['isAdmin'] == 0) {
-                            // Regular user
-                            if ($user['id_user'] == $row['id_user']) {
-                                // Check if status is 'Diproses' or 'Ditolak'
-                                echo ($row['status'] == 'Diproses' || $row['status'] == 'Ditolak') ?
-                                    $row['status'] . '<br><a href="form.php?edit=' . $row['id_peminjaman'] . '">Edit | </a>' .
-                                    '<a href="table.php?del=' . $row['id_peminjaman'] . '">Delete</a>' :
-                                    $row['status'];
-                            } else {
-                                echo $row['status'];
-                            }
-                        } elseif ($user['isAdmin'] == 1) {
-                            // Admin
-                            if ($row['status'] == 'Diproses') {
-                                // Display approve and reject links only for 'Diproses' status
-                                echo $row["status"] .'<br>';
-                                echo '<a href="table.php?acc=' . $row['id_peminjaman'] . '">Terima | </a>';
-                                echo '<a href="table.php?dec=' . $row['id_peminjaman'] . '">Tolak</a> <br>';
-                                if ($user['id_user'] == $row['id_user']){
-                                echo '<a href="form.php?edit=' . $row['id_peminjaman'] . '">Edit | </a>
-                                <a href="table.php?del=' . $row['id_peminjaman'] . '">Delete </a>';}
-                                
-                                
-                            } else {
-                                echo $row['status'];
-                            }
-                        }
-                    
-                        echo '</td>';
-                        echo "</tr>";
-                    }
-                    
-
-                    
-
-                      mysqli_free_result($result);
-                    ?>
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Nama Peminjam</th>
-                    <th>Acara</th>
-                    <th>Organisasi</th>
-                    <th>Ruang</th>
-                    <th>Waktu Awal</th>
-                    <th>Waktu Akhir</th>
+                  <th>No </th>
+                    <th>Nama</th>
+                    <th>Email</th>
                     <th>Aksi</th>
                   </tr>
                   </tfoot>

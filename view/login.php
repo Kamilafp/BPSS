@@ -24,10 +24,7 @@
   <div class="card border-0 shadow">
     <div class="card-body login-card-body">
       <div class="d-flex justify-content-center mb-4">
-        <svg xmlns="https://surakartakota.bps.go.id/backend/images/Header-Frontend-Besar-ind.png" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" >
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-        </svg>
+      <img src="../img/BPS.png" alt="bps"  class="brand-image img-circle" style="opacity: .9; background-color: white; height: 100px" >
       </div>
 
       <form action="function/loginProcess.php" method="post">

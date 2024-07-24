@@ -54,7 +54,7 @@ if(isset($query)){
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#" style="color:#00497D">User Operator BPS</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color:#0279C8">User Operator BPS</a></li>
               <li class="breadcrumb-item active">Surakarta</li>
             </ol>
           </div>

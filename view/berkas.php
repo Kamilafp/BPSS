@@ -33,7 +33,7 @@ include 'function/validateSession.php';
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#" style="color:#00497D">Berkas BPS</a></li>
+              <li class="breadcrumb-item"><a href="#" style="color:#0279C8">Berkas BPS</a></li>
               <li class="breadcrumb-item active">Surakarta</li>
             </ol>
           </div>

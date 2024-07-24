@@ -47,6 +47,6 @@
       Disposisi Surat BPS 
     </div>
     <!-- Default to the left -->
-    <strong>Hak Cipta &copy; <a href="https://ft.unsoed.ac.id/" style="color:#00497D">Badan Pusat Statistik 2024</a>.</strong>
+    <strong>Hak Cipta &copy; <a href="https://ft.unsoed.ac.id/" style="color:#0279C8">Badan Pusat Statistik 2024</a>.</strong>
     <div class="footer-middle"></div>
   </footer>

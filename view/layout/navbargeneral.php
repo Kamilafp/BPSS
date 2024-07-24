@@ -4,7 +4,7 @@
 </head>
 
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-light" style='background: linear-gradient(to top,#00497d,#0279C8)'>
+<nav class="main-header navbar navbar-expand navbar-light" style='background: linear-gradient(to top,#00497d,#0279C8); transition: background 0.5s;'>
   <!-- Left navbar links -->
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -61,6 +61,7 @@
     const darkModeToggle = document.getElementById('darkModeToggle');
     const navbar = document.querySelector('.main-header.navbar');
     const sidebar = document.querySelector('.main-sidebar');
+    const icon = darkModeToggle.querySelector('i');
 
     function updateDarkMode() {
       if (document.body.classList.contains('dark-mode')) {
@@ -68,19 +69,25 @@
         navbar.classList.add('navbar-dark');
         sidebar.classList.remove('sidebar-light-primary');
         sidebar.classList.add('sidebar-dark-primary');
-        darkModeToggle.querySelector('i').classList.remove('fa-moon');
-        darkModeToggle.querySelector('i').classList.add('fa-sun');
-        navbar.removeAttribute('style'); // Remove the inline style for background
-        sidebar.querySelector('.brand-link').removeAttribute('style'); // Remove the inline style for background
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        icon.classList.add('rotate');
+        setTimeout(() => icon.classList.remove('rotate'), 800);
+        darkModeToggle.setAttribute('title', 'Light Mode'); 
+        navbar.removeAttribute('style'); 
+        sidebar.querySelector('.brand-link').removeAttribute('style');
       } else {
         navbar.classList.remove('navbar-dark');
         navbar.classList.add('navbar-light');
         sidebar.classList.remove('sidebar-dark-primary');
         sidebar.classList.add('sidebar-light-primary');
-        darkModeToggle.querySelector('i').classList.remove('fa-sun');
-        darkModeToggle.querySelector('i').classList.add('fa-moon');
-        navbar.setAttribute('style', 'background: linear-gradient(to top,#00497d,#0279C8)'); 
-        sidebar.querySelector('.brand-link').setAttribute('style', 'background: linear-gradient(to top,#00497d,#0279C8)'); // Add the linear gradient style back
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        icon.classList.add('rotate');
+        setTimeout(() => icon.classList.remove('rotate'), 800);
+        darkModeToggle.setAttribute('title', 'Dark Mode'); 
+        navbar.setAttribute('style', 'background: linear-gradient(to top,#00497d,#0279C8); transition: background 0.5s;'); 
+        sidebar.querySelector('.brand-link').setAttribute('style', 'background: linear-gradient(to top,#00497d,#0279C8); transition: background 0.5s;'); // Add the linear gradient style back
       }
     }
 
@@ -107,34 +114,55 @@
   .dark-mode {
     background-color: #121212;
     color: #ffffff;
+    transition: background-color 1s, color 1s;
   }
 
   .dark-mode .navbar {
-    background: linear-gradient(to top, #121212, #1e1e1e);
-  }
-
-  .dark-mode .sidebar {
-    background-color: #1f1f1f;
-    color: white;
+    background: linear-gradient(to top, #2c2c2c, #1e1e1e);
+    transition: background 1s;
   }
 
   .dark-mode .brand-link {
-    background: linear-gradient(to top, #121212, #1e1e1e);
+    background: linear-gradient(to top, #2c2c2c, #1e1e1e);
+    transition: background 1s;
   }
 
   .dark-mode .nav-link {
     color: white !important;
+    transition: color 1s;
   }
 
   .dark-mode .input-group-sm .form-control-navbar {
     background-color: #2c2c2c;
     color: white;
     border: none;
+    transition: background-color 1s, color 1s;
   }
 
   .dark-mode .input-group-sm .btn-navbar {
     background-color: #2c2c2c;
     color: white;
     border: none;
+    transition: background-color 1s, color 1s;
+  }
+  .main-header.navbar {
+    transition: background-color 1s, color 1s;
+  }
+
+  .brand-link {
+    transition: background-color 1s, color 1s;
+  }
+
+  .rotate {
+    animation: rotateIcon 0.5s;
+  }
+
+  @keyframes rotateIcon {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 </style>

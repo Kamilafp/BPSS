@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $row["password"])) {
             $_SESSION['user'] = $row;
 
-            header("Location: ../dashboard.php");
+            header("Location: ../table.php");
             exit;
         } else {
             

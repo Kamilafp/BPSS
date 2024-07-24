@@ -46,7 +46,7 @@
         </div>
           <!-- /.col -->
           <div class="text-center nt-3">
-            <button type="submit" class="btn btn-block" style="background-color: #00497d; color: #ffffff;">login</button>
+            <button type="submit" class="btn btn-block" style="background-color: #0279C8; color: #ffffff;">login</button>
           </div><a href="register.php" class="text-center" style="color: #00497d;">Register</a>
           <!-- /.col -->
         </div>
